@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Bitcount Prop Single", system-ui;
+}
+
+body {
+  width: 100%;
+  text-align: center;
+}
+h1{
+    padding: 1rem 0;
+}
+.header{
+    display: grid;
+    margin: 1rem auto;
+    grid-template-columns: auto auto auto auto auto;
+    align-items: center;
+    width: 90%;
+    text-align: center;
+     
+}
+.month,
+.days,
+.hours,
+.minutes,
+.sceconds{
+    border: 1px solid #333;
+    max-width: 6rem;
+    max-width: 6rem;
+    padding: .5rem;
+     border-radius: 10px;
+     background-color: #3333338a;
+}
+h2{
+    margin-top: 1rem;
+    font-size: 2rem;
+}
