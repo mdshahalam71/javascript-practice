@@ -1,1 +1,28 @@
- 
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chose Your HolyDay</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="header">
+      <div class="logo">DK ALAM</div>
+      <h1>Find The First Day Of The Year HOliday</h1>
+      <div class="input-list">
+        <div class="sub-input">
+          <label>First Year:</label>
+          <input type="text" placeholder="Input First Year" id="firstValue" />
+        </div>
+        <div class="sub-input">
+          <label>End Year:</label>
+          <input type="text" placeholder="Input End Year" id="secondValue" />
+        </div>
+      </div>
+      <input type="submit" onclick="submitBtn()" class="submit-Btn"/>
+      <div id="finalResult"></div>
+    </div>
+    <script src="document.js"></script>
+  </body>
+</html>
