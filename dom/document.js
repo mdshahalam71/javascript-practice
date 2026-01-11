@@ -18,18 +18,26 @@ const newResult=result(num1,num2,num3);
 // right side here*************************************************
 
 const display=document.querySelector('.display');
-
+ 
 function apentToDisplay(input){
         display.innerText +=input;
 }
  
-function clearToDisplay(input){
-     display.innerText = ' ';
+function clearToDisplay(){
+    const userInput = parseInt(display.innerText) || 0;
+     if(userInput===newResult){
+          alert("your are right")
+     }else{
+          alert("you are false")
+     }
+     display.innerText = '';
+     window.location.reload()
 }
 
-function delateToDisplay(display){
-     console.log(display)
+function delateToDisplay(){
+     display.innerText=display.innerText.slice(0,-1);
 }
 
-console.log(delateToDisplay)
+
+ 
  
