@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/29b317fbd7.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>Todo App</h1>
+        <p>Get thing done,one task at a time</p>
+      </div>
+      <form class="todo-form" id="todoform">
+       <div class="input-group">
+         <input
+          type="text"
+          class="todo-input"
+          id="todoInput"
+          placeholder="What needs to be done?"
+          required
+        />
+        <button type="submit" class="add-btn">Add Task</button>
+       </div>
+      </form>
+
+      <div class="filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn " data-filter="pending">Pending</button>
+        <button class="filter-btn " data-filter="completed">Completed</button>
+      </div>
+
+
+      <div class="todo-list" id="todoList">
+        <div class="empty-state" id="emptyState">
+            <i class="fas fa-clipboard-list"></i>
+            <h3>No tasks yet</h3>
+            <p>Add a task above to get started</p>
+        </div>
+      </div>
+
+      <div class="stats">
+        <span id="taskCound">0 tasks</span>
+        <button class="action-btn" id="clearCompleted">Clear completed</button>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
