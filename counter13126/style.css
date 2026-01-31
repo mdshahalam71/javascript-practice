@@ -1,0 +1,65 @@
+
+@import url('https://fonts.googleapis.com/css2?family=New+Rocker&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #33333320;
+  height: 100vh;
+  font-family: "New Rocker", system-ui;
+}
+h1 {
+  border-bottom: 1px solid white;
+  margin-bottom: 2rem;
+  font-size: 4rem;
+  color: #333;
+  text-shadow: 5px 5px 3px white;
+}
+.container {
+  box-shadow: 0 0 10px white;
+  margin: 30% auto;
+  max-width: 500px;
+  max-height: 500px;
+  padding: 3rem 1rem;
+  text-align: center;
+  border-radius: 10px;
+}
+.btn {
+  padding: 1rem;
+}
+.btn button {
+  padding: 0.5rem 1rem;
+  font-size: 2rem;
+  outline: none;
+  border: none;
+  background: green;
+  border-radius: 10px;
+}
+#total {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+@media (max-width: 720px) {
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .container {
+    overflow: hidden;
+    width: 100%;
+    margin: 2%;
+  }
+  #total {
+    overflow: hidden;
+  }
+  h1 {
+    font-size: 3rem;
+  }
+}
