@@ -1,0 +1,91 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+}
+.header {
+  font-size: 4rem;
+  text-shadow: 0 5px 10px ;
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  text-align: center;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+  padding:.2rem 0;
+}
+.value {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 .3rem;
+  margin: 2rem 0;
+}
+.value button {
+  border: none;
+  padding: 0.7rem 1rem;
+  background-color: green;
+  font-weight: 900;
+  font-size: 0.9rem;
+  border-radius: 10px;
+   transition: .3s;
+}
+.value button:hover{
+    transform: translateY(-3px);
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.743);
+    color: rgb(202, 233, 26);
+}
+.value input {
+  border: none;
+  background: #3333331f;
+  border-radius: 10px;
+  padding: 0 10px;
+  font-weight: 900;
+  font-size: 1.5rem;
+  margin-right: 0.5rem;
+}
+.row {
+  display: flex;
+  padding: 0.8rem 2rem;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 900;
+  font-size: 2rem;
+  margin: -10px 0;
+}
+.row:nth-child(odd) {
+  background-color: #f9f9f9;
+}
+.row:nth-child(even) {
+  background-color: #e2e2e2;
+  color: #333;
+}
+.display {
+  font-size: 3rem;
+}
+@media screen and (max-width: 767px) {
+    .main{
+    width: 100%;
+  }
+  .value{
+    display: flex;
+    flex-direction: column;
+    padding: 0 .3rem;
+    width: 100%;
+    margin: 10px 0;
+  }
+  .value button{
+    margin-top: 10px;
+    width: 100%;
+    letter-spacing: 1rem;
+  }
+  .value input{
+    width: 100%;
+  }
+}
