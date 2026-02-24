@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://matcha.mizu.sh/matcha.css">
+    <style>
+        #result{
+            width: 500px;
+            height: 500px;
+        }
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <h1>The New Dog Photo</h1>
+    <div id="result"></div>
+    <button onclick="getDogPhoto()">Click</button>
+    <script>
+       async function getDogPhoto(){
+        document.getElementById('result').innerHTML="Loding....";
+            const apiUrl='https://dog.ceo/api/breeds/image/random'
+            const res= await fetch(apiUrl)
+            const data=await res.json()
+            const imge=data.message
+              const img=`<img src=${imge}>`
+              document.getElementById('result').innerHTML=img;
+        }
+
+        getDogPhoto()
+        
+    </script>
+</body>
+</html>
