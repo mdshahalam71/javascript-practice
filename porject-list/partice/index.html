@@ -1,0 +1,33 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+ </head>
+ <body>
+     <div class="container">
+        <h1>Todo List</h1>
+
+        <div class="input-section">
+            <input type="text" id="todoInput" placeholder="Enter a new todo....">
+            <button id="addBtn">Add</button>
+        </div>
+
+        <div class="filter-section">
+            <button class="filter-btn active" data-filter="all">all</button>
+            <button class="filter-btn" data-filter="active">active</button>
+            <button class="filter-btn" data-filter="completed">completed</button>
+        </div>
+
+        <ul id="todoList"></ul>
+
+        <div class="stats-section">
+            <span id="todoCount">0 items left</span>
+            <button id="clearCompletedBtn"> Clear Completed</button>
+        </div>
+     </div>
+     <script src="doucment.js"></script>
+ </body>
+ </html>

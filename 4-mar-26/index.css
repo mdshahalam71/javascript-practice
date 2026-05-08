@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgb(229, 210, 210);
+    padding: 0 1rem;
+    box-shadow: 0 5px 20px #33333385;
+}
+nav >img{
+    width: 4rem;
+}
+
+.hero-img{
+    width: 100%;
+}
+.live-card{
+    margin-top: 2rem;
+    padding: 0 .7rem;
+}
+.card{
+    width: 100%;
+     box-shadow: 0 0 10px #a48989;
+    text-align: center;
+    padding: 1rem 0;
+    border-radius: 3%;
+}
+.score{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: .5rem 2rem;
+}
