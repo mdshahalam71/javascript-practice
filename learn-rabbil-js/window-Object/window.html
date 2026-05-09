@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Window Object</title>
+</head>
+<body>
+
+    <button onclick="ObjAlert()">Alert</button>
+    <button onclick="ObjConfrom()">Confrom</button>
+    <button onclick="ObjPrompt()">prompt</button>
+    <button onclick="ObjOpen()">Open</button>
+    <button onclick="ObjClose()">Close</button>
+
+
+    <script>
+         function ObjAlert(){
+            alert("Hello Bangladesh")
+         }
+         function ObjConfrom(){
+            let result=confirm("Do you want to Delete !")
+            document.write(result)
+         }
+         function ObjPrompt(){
+            let result=prompt("Write your Name")
+            document.write(result)
+         }
+         function ObjOpen(){
+            open()
+         }
+         function ObjClose(){
+            close()
+         }
+
+            setTimeout(function(){
+                 
+                alert("Alert after 4 mins")
+            },3000)
+    </script>
+</body>
+</html>
